@@ -1,0 +1,40 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  h5 {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  ul li {
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+  }
+  
+  footer {
+    background-color: #222;
+    color: #bbb;
+  }
+  
+  img.img-fluid {
+    max-height: 300px;
+    object-fit: contain;
+  }
+  
