@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup | Smart Energy Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: url('login-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.75);
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-container {
+      background: #121212;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0, 255, 204, 0.3);
+      width: 100%;
+      max-width: 420px;
+      color: #fff;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    .form-container h3 {
+      color: #00ffcc;
+      font-weight: bold;
+      text-shadow: 0 0 5px #00ffcc;
+    }
+
+    .form-control {
+      background-color: #1e1e1e;
+      border: 1px solid #00ffcc;
+      color: white;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+
+    .form-control:focus {
+      background-color: #1e1e1e;
+      border-color: #00ffaa;
+      box-shadow: 0 0 10px #00ffaa;
+    }
+
+    .btn-custom {
+      background-color: #00ffcc;
+      color: #000;
+      font-weight: bold;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffcc;
+      transition: 0.3s ease-in-out;
+    }
+
+    .btn-custom:hover {
+      background-color: #00ffaa;
+      color: #000;
+      box-shadow: 0 0 20px #00ffaa;
+    }
+
+    a.text-info {
+      color: #00ffcc !important;
+      text-decoration: none;
+    }
+
+    a.text-info:hover {
+      text-decoration: underline;
+      color: #00ffaa !important;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="form-container">
+      <h3 class="text-center mb-4">📝 Create Account</h3>
+      <form action="/signup" method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" name="name" id="name" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" name="email" id="email" required />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" name="password" id="password" required />
+        </div>
+        <button type="submit" class="btn btn-custom w-100 mb-2">Sign Up</button>
+        <p class="text-center mt-3">
+          Already have an account?
+          <a href="/login" class="text-info">Login here</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
