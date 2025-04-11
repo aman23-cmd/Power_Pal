@@ -60,3 +60,10 @@ Store and show historical usage trends from DB
 Predict high-usage zones using AI
 
 Notifications or suggestions based on behavior
+
+Created by- Tech titans
+Name- Aditya pratap singh
+Tarun singh 
+Shivam singh
+Aman Kaushal
+
